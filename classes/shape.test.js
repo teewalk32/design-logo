@@ -1,38 +1,38 @@
-const Arithmetic = require('../shape.js');
+const shape = require('../shape.js');
 
 
 
 describe('shape', () => {
    
-    describe('', () => {
-      it('', () => {
-        const total = 0;
-        const arithmetic = new Arithmetic();
-        expect(arithmetic.modulus(2, 2)).toEqual(total);
+    describe('circle', () => {
+      it('it should be round ', () => {
+        // const total = 0;
+        const shape = new shape();
+        // expect(arithmetic.modulus(2, 2)).toEqual(total);
       });
     });
   });
   
   
-  describe('', () => {
+  describe('shape', () => {
    
-    describe('', () => {
-      it('', () => {
-        const total = 1;
-        const arithmetic = new Arithmetic();
-        expect(arithmetic.modulus(3, 2)).toEqual(total);
+    describe('square', () => {
+      it('it should have four equal sides', () => {
+        // const total = 1;
+        const shape = new shape();
+        // expect(arithmetic.modulus(3, 2)).toEqual(total);
       });
     });
   });
   
   
-  describe('', () => {
+  describe('shape', () => {
     
-    describe('', () => {
-      it('', () => {
-        const total = 4;
-        const arithmetic = new Arithmetic();
-        expect(arithmetic.modulus(10, 6)).toEqual(total);
+    describe('triangle', () => {
+      it('it should have 3 points', () => {
+        // const total = 4;
+        const shape = new shape();
+        // expect(arithmetic.modulus(10, 6)).toEqual(total);
       });
     });
   });

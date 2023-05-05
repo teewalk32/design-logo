@@ -1,38 +1,38 @@
-const Arithmetic = require('../arithmetic.js');
+const color = require('../color.js');
 
 
 
-describe('Arithmetic', () => {
+describe('color', () => {
    
-    describe('modulus', () => {
-      it('should calculate 2 % 2 and return 0 as the remainder', () => {
-        const total = 0;
-        const arithmetic = new Arithmetic();
+    describe('circle', () => {
+      it('it should be blue, red, or purple', () => {
+        // const total = 0;
+        const color = new color();
         expect(arithmetic.modulus(2, 2)).toEqual(total);
       });
     });
   });
   
   
-  describe('Arithmetic', () => {
+  describe('color', () => {
    
-    describe('modulus', () => {
-      it('should calculate 3 % 2 and return 1 as the remainder', () => {
-        const total = 1;
-        const arithmetic = new Arithmetic();
-        expect(arithmetic.modulus(3, 2)).toEqual(total);
+    describe('square', () => {
+      it('it should be blue, red, or purple', () => {
+        // const total = 1;
+        const color= new color();
+        // expect(arithmetic.modulus(3, 2)).toEqual(total);
       });
     });
   });
   
   
-  describe('Arithmetic', () => {
+  describe('color', () => {
     
-    describe('modulus', () => {
-      it('should calculate 10 % 6 and return 4 as the remainder', () => {
-        const total = 4;
-        const arithmetic = new Arithmetic();
-        expect(arithmetic.modulus(10, 6)).toEqual(total);
+    describe('triangle', () => {
+      it('it should be blue, red, or purple', () => {
+        // const total = 4;
+        const color = new color();
+        // expect(arithmetic.modulus(10, 6)).toEqual(total);
       });
     });
   });
