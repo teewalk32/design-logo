@@ -1,6 +1,5 @@
-const shape = new Triangle();
-// shape.setColor("blue");
-// expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
+const inquirer = require('inquirer');
+const fs = require('fs');
 
 
 inquirer
@@ -11,27 +10,32 @@ inquirer
       message: 'Enter up to three characters',
     },
     {
-      type: 'input',
-      name: 'Text color',
-      message: 'Pick a text color',
-    },
-    {
       type: 'list',
       name: 'Shape',
       message: 'Choose a shape',
-      choices: 'Circle, Triangle, and Square',
+      choices: [
+        'Circle', 'Triangle', 'Square',
+      ]
     },
     {
       type: 'list',
       name: 'Shape color',
       message: 'Pick a color for the shapes',
-      choices: 'Blue, Red, Purple'
+      choices: [
+        'Blue', 'Red', 'Purple'
+      ]
     },
 ])
-.then((answers) => {
-  const htmlPageContent = generateHTML(answers);
+// .then((answers) => {
+//   // const htmlPageContent = generateHTML(answers);
 
-  fs.writeFile('index.html', htmlPageContent, (err) =>
-    err ? console.log(err) : console.log('Successfully created index.html!')
-  );
+//   fs.writeFile('index.html', htmlPageContent, (err) =>
+//     err ? console.log(err) : console.log('Successfully created index.html!')
+//   );
+// });
+
+.then ((response) => {
+  console.log(response);
+  fs.writeFile('response.txt', JSON.stringify(response,null, '\t'), (err) =>
+  err ? console.log(err): console.log ('success!'))
 });

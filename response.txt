@@ -1,0 +1,5 @@
+{
+	"Text": "tkw",
+	"Shape": "Circle",
+	"Shape color": "Red"
+}
