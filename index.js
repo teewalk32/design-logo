@@ -16,13 +16,13 @@ inquirer
       message: 'Pick a text color',
     },
     {
-      type: 'input',
+      type: 'list',
       name: 'Shape',
       message: 'Choose a shape',
       choices: 'Circle, Triangle, and Square',
     },
     {
-      type: 'input',
+      type: 'list',
       name: 'Shape color',
       message: 'Pick a color for the shapes',
       choices: 'Blue, Red, Purple'
