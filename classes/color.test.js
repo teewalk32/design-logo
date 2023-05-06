@@ -1,39 +1,36 @@
-const color = require('./color.js');
+const { Red, Blue, Purple} = require('./color.js');
 
 
 
-describe('color', () => {
+
    
     describe('circle', () => {
-      it('it should be blue, red, or purple', () => {
-        // const total = 0;
+      test('it should be blue, red, or purple', () => {
+        const expectedColor = "";
         const color = new color();
-        // expect(arithmetic.modulus(2, 2)).toEqual(total);
+        expect(circle.render(red, blue, purple)).toEqual(expectedColor);
       });
     });
-  });
   
   
-  describe('color', () => {
+  
    
     describe('square', () => {
-      it('it should be blue, red, or purple', () => {
-        // const total = 1;
+      test('it should be blue, red, or purple', () => {
+        const expectedColor = "";
         const color= new color();
-        // expect(arithmetic.modulus(3, 2)).toEqual(total);
+        expect(square.render(red, blue, purple)).toEqual(expectedColor);
       });
     });
-  });
   
   
-  describe('color', () => {
+  
     
     describe('triangle', () => {
-      it('it should be blue, red, or purple', () => {
-        // const total = 4;
+      test('it should be blue, red, or purple', () => {
+        const expectedColor = "";
         const color = new color();
-        // expect(arithmetic.modulus(10, 6)).toEqual(total);
+        expect(triangle.render(red, blue, purple)).toEqual(expectedColor);
       });
     });
-  });
   
