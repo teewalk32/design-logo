@@ -19,6 +19,7 @@ answer questions prompted to you and it'll auto generate a logo .
 <!-- ![alt text](assets/images/screenshot.png) -->
 
 ## Credits
+https://www.w3schools.com/graphics/svg_rect.asp
 
 
 
