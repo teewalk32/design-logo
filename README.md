@@ -16,7 +16,13 @@ you'll need to install node for this project.
 
 answer questions prompted to you and it'll auto generate a logo .
 
+
 <!-- ![alt text](assets/images/screenshot.png) -->
+
+## Video-Link
+
+https://drive.google.com/file/d/1Vw7XW8jrDntnr3odXqCQwmgyU0tH72W0/view
+
 
 ## Credits
 https://www.w3schools.com/graphics/svg_rect.asp
