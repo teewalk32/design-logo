@@ -1,8 +1,9 @@
+// imports
 const inquirer = require('inquirer');
 const fs = require('fs');
 const {Circle, Square, Triangle} = require('./classes/shape');
 
-
+// inquirer prompts that include input and list with three choices
 inquirer
   .prompt([
     {
@@ -36,6 +37,7 @@ inquirer
 //   );
 // });
 
+// switch statement instead of if else statement. 
 .then ((response) => {
 let shape ; 
 switch (response.Shape) {
@@ -51,6 +53,7 @@ switch (response.Shape) {
   default: console.log ("please pick a shape!")
 
 }
+//  size of every shape 300 by 200
 console.log(shape)
 let template = `<svg width="300" height="200"> 
 ${shape.render()} 
