@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const {Circle, Square, Triangle} = require('./classes/shape');
 
 
 inquirer
@@ -19,13 +20,14 @@ inquirer
     },
     {
       type: 'list',
-      name: 'Shape color',
+      name: 'Color',
       message: 'Pick a color for the shapes',
       choices: [
         'Blue', 'Red', 'Purple'
       ]
     },
 ])
+
 // .then((answers) => {
 //   // const htmlPageContent = generateHTML(answers);
 
@@ -35,7 +37,25 @@ inquirer
 // });
 
 .then ((response) => {
+let shape ; 
+switch (response.Shape) {
+  case "Circle":
+  shape = new Circle (response.Color)
+  break;
+  case "Triangle":
+  shape = new Triangle (response.Color)
+  break;
+  case "Square":
+  shape = new Square (response.Color)
+  break;
+  default: console.log ("please pick a shape!")
+
+}
+console.log(shape)
+let template = `<svg width="300" height="200"> 
+${shape.render()} 
+</svg>`
   console.log(response);
-  fs.writeFile('response.txt', JSON.stringify(response,null, '\t'), (err) =>
+  fs.writeFile('logo.svg', template, (err) =>
   err ? console.log(err): console.log ('success!'))
 });

@@ -1,6 +1,6 @@
 class Shape {
-    constructor() {
-      this.color = "";
+    constructor(color) {
+      this.color = color;
     }
   
     setColor(color) {
@@ -10,7 +10,7 @@ class Shape {
 
 
   class Circle extends Shape {
-    render(){
+    render() {
         return `<circle cx="150" cy="100" r="80" fill="${this.color}" />`;
     }
   }
